@@ -1,0 +1,22 @@
+{
+  "name": "VKrypt",
+  "description": "Encrypts direct messages in vk.com so FSB won't understand you.",
+  "manifest_version": 2,
+  "version": "1.0",
+  // "permissions": [
+  //   "webRequest",
+  //   "<all_urls>"
+  // ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.vk.com/*"],
+      "js": [
+        // "vkrypt.js"
+        "vkrypt_build.js"
+      ]
+    }
+  ]
+  // "background": {
+  //   "scripts": ["background.js"]
+  // }
+}
